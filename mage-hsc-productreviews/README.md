@@ -1,10 +1,10 @@
 # mage-hsc-productreviews
-Mage-HSC-Productreviews is a Magento module that is designed to send product review solicitation emails to customers who've made a purchase from a Magento site.
+Mage-HSC-Multisite is a Magento module that is designed to send product review solicitation emails to customers who've made a purchase from a Magento site.
 The module takes advantage of Magento's built-in email queing system in so that email sends will be throttled. This is to avoid spam-like send behavior.
 
 # Background Information
-This module was built to solicit real product reviews from customers that can be recorded for moderation and displayed on the site. 
-It can associate and display on site, an aggregate star rating for a product after compiling reviews.
+This module was built to solicit real product reviews from our customers that can be recorded for moderation and displayed on the site. 
+We can associate and display on site, an aggregate star rating for a product after compiling reviews.
 The product review email can offer an incentive for review, like a discount code.
 
 # Module Configuration
@@ -16,7 +16,7 @@ The module can be configured to:
 - Set the delay of email sends between today's date (when the module runs) and the date of the delivery confirmation 
 
 # Current Module Specifications
-The module is set up to be sent to any customer who makes a purchase from a Magento site, that does not have a business account.
+The module is set up to be sent to any customer who makes a purchase from a Magento site, that does not have a business account with HC Brands.
 The cron which runs daily to trigger the module, is set to kick-off at 6:00am.
 
 ## NOTICE
@@ -26,4 +26,5 @@ This module contains the settings/configurations for "Marketing Site Components"
 - Frequently Purchased Items Settings
 
 # Testing
-To test, call the sendReviewEmailAction by executing a URL, such as: https://dev.[websitename].com/productreviews/index/sendReviewEmail. [websitename] can be replaced with any magento store domain name. This action will fire off the emails and send receipts to whatever emails are configured in the HSC > Product Reviews configuration section.
+To test, call the sendReviewEmailAction by executing a URL, such as: https://dev.simplystamps.com/productreviews/index/sendReviewEmail. Simply Stamps can be replaced with any of our magento stores. This action will fire off the emails and send them to whatever is configured in the HSC > Product Reviews configuration section.
+
