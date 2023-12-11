@@ -1,0 +1,26 @@
+<?php $customerInfo = Mage::getModel('hsc_productreviews/email_template')->getCustomerDeliveryInfo(); ?>
+<table cellspacing="0" cellpadding="0" border="0" width="650">
+    <thead>
+    <tr>
+        <th align="center" bgcolor="#EAEAEA" style="font-size:14px;padding:3px 9px"><?php echo $this->__('PRODUCT') ?></th>
+        <!-- <th align="left" bgcolor="#EAEAEA" style="font-size:13px; padding:3px 9px"><?php //echo $this->__('Details') ?></th> -->
+        <th align="left" bgcolor="#EAEAEA" style="font-size:14px; padding:3px 9px"><?php echo $this->__('Sku') ?></th>
+        <th align="center" bgcolor="#EAEAEA" style="font-size:14px;padding:3px 9px"><?php echo $this->__('QTY') ?></th>
+        <th align="right" bgcolor="#EAEAEA" style="font-size:14px;padding:3px 9px"><?php echo $this->__('REVIEW') ?></th>
+    </tr>
+    </thead>
+    <?php $i=0; foreach ($customerInfo as $customer): ?>
+        <?php
+        $i++;
+        ?>
+        <?php foreach ($customer as $customerReviewInfo): ?>
+
+            <tbody<?php echo $i%2 ? ' bgcolor="#FFFFFF"' : '' ?>>
+                <?php /*var_dump($customerReviewInfo); */?>
+            </tbody>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
+    <tbody>
+
+    </tbody>
+</table>

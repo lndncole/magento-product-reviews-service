@@ -1,0 +1,5 @@
+app/code/local/HSC/Productreviews    app/code/local/HSC/Productreviews
+app/etc/modules/HSC_Productreviews.xml    app/etc/modules/HSC_Productreviews.xml
+app/design/frontend/base/default/layout/hsc_productreviews.xml   app/design/frontend/base/default/layout/hsc_productreviews.xml
+app/design/frontend/base/default/template/productreviews    app/design/frontend/base/default/template/productreviews
+skin/frontend/base/default/css/productreviews    skin/frontend/base/default/css/productreviews
