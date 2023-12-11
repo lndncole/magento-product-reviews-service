@@ -35,8 +35,8 @@ class HSC_Productreviews_IndexController extends Mage_Core_Controller_Front_Acti
         $userEmail = $userinfo->email;
 
         //API information
-        $singUpSourceId = $dataFromAjax->signUpSourceId;
-        $bearerToken = 'YkpuRVRxUFBhc0thblVPUzRiZFN4RE0zWnhManY2ZzVPMFl0';
+        $singUpSourceId = null;
+        $bearerToken = null;
 
         $curl = curl_init();
 
