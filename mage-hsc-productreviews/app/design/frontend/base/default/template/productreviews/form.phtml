@@ -223,17 +223,25 @@
 
             if (reviewSubmissionConfirmation.length) {
                 if(reviewSubmissionConfirmation[0].textContent == 'Your review has been accepted for moderation.') {
-                    // Handle successful review confirmation
-                    // Popup with review confirmation
+                    Holmes_Alert('\<img src="https://cdn.allstatenotarysupplies.com/media/wysiwyg/WebAssets/Modal/confirmation-check.png"\>\<br\>Thank you for taking the time to give us your feedback.', 'Review Submitted.', undefined, undefined, undefined, undefined, 'CouponCodeCopied', '/')
+                    setTimeout(function(){
+                        document.querySelector('#holmes-alert > div > div > div.modal-footer > a > button').innerText = "Shop This Week's Sale";
+                        jQuery('#holmes-alert').css('pointer-events', 'none');
+                        jQuery('#holmes-alert > div').css('pointer-events', 'all');
+                        jQuery('#holmes-alert  div.modal-header.bg-warning > button.close').css('display', 'none');
+                        jQuery('html, body').css({
+                            overflow: 'hidden',
+                            height: '100%'
+                        });
+                    }, 300);
                 }
             }
-            
-            //Handle missing mandatroy fields
+
             let starCompletedAlert,
                 nameCompletedAlert,
                 summaryCompletedAlert,
                 reviewCompletedAlert;
-            
+
             document.getElementById("review_submit_button").onclick = function (e) {
                 for (let i = 0; i < 5; i++) {
                     if (

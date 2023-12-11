@@ -14,7 +14,9 @@
         $i++;
         ?>
         <?php foreach ($customer as $customerReviewInfo): ?>
+
             <tbody<?php echo $i%2 ? ' bgcolor="#FFFFFF"' : '' ?>>
+                <?php /*var_dump($customerReviewInfo); */?>
             </tbody>
         <?php endforeach; ?>
     <?php endforeach; ?>
