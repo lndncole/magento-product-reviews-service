@@ -7,3 +7,20 @@
         </HSC_Productreviews>
     </modules>
 </config>
+
+<!--<config>-->
+<!--     <modules>-->
+<!--        <HSC_Productreviews>-->
+<!--            <active>true</active>-->
+<!--            <codePool>local</codePool>-->
+<!--            <depends>-->
+<!--                <Mage_Adminhtml />-->
+<!--                <Mage_Catalog />-->
+<!--                <Magestore_Onestepcheckout />-->
+<!--                <Magiccart_Alothemes />-->
+<!--            </depends>-->
+<!--        </HSC_Productreviews>-->
+<!--     </modules>-->
+<!--</config>-->
+
+
