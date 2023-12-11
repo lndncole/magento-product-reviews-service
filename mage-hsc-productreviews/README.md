@@ -27,3 +27,4 @@ This module contains the settings/configurations for "Marketing Site Components"
 
 # Testing
 To test, call the sendReviewEmailAction by executing a URL, such as: https://dev.[websitename].com/productreviews/index/sendReviewEmail. [websitename] can be replaced with any magento store domain name. This action will fire off the emails and send receipts to whatever emails are configured in the HSC > Product Reviews configuration section.
+
